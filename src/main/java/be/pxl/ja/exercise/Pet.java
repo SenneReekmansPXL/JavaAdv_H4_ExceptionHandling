@@ -1,8 +1,8 @@
 package be.pxl.ja.exercise;
 
 public class Pet {
-    private static final int MAX_ENERGY = 100;
-    private static final int MIN_ENGERGY = 0;
+    public static final int MAX_ENERGY = 100;
+    public static final int MIN_ENERGY = 0;
     private int energy;
 
     public Pet(int energy){
@@ -10,7 +10,7 @@ public class Pet {
     }
 
     private void setEnergy(int energy){
-        this.energy = Math.max(MIN_ENGERGY, Math.min(energy, MAX_ENERGY));
+        this.energy = Math.max(MIN_ENERGY, Math.min(energy, MAX_ENERGY));
     }
 
     public int getEnergy() {
